@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H2o-A3-Xyg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QQG-WP-R5P">
+            <objects>
+                <tabBarController id="H2o-A3-Xyg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HBN-RN-QSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="I1d-Ja-9wg"/>
+                        <segue destination="W2l-pd-Xub" kind="relationship" relationship="viewControllers" id="1Yr-ND-TaQ"/>
+                        <segue destination="LHg-xH-DQm" kind="relationship" relationship="viewControllers" id="oAI-bd-zoW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRF-wH-XH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1299" y="113"/>
+        </scene>
+        <!--ThirdViewController-->
+        <scene sceneID="Mvg-qL-lqR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" referencedIdentifier="ThirdViewController" id="LHg-xH-DQm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Third" image="trash" catalog="system" selectedImage="trash.slash.fill" id="Gl1-95-v5D"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SX9-TU-d6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-627" y="255"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardReference" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IC-lP-CWE">
+                                <rect key="frame" x="171" y="433" width="72" height="30"/>
+                                <state key="normal" title="Show First"/>
+                                <connections>
+                                    <segue destination="eNM-Rc-Da4" kind="show" id="0SW-Rg-vbL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5IC-lP-CWE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FCC-Hy-Mus"/>
+                            <constraint firstItem="5IC-lP-CWE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S8J-pM-sqH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="folder" catalog="system" selectedImage="folder.fill" id="Omx-Oc-W6U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-190"/>
+        </scene>
+        <!--FirstViewController-->
+        <scene sceneID="S1a-B3-12T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="First" referencedIdentifier="FirstViewController" id="eNM-Rc-Da4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n6u-R1-3Uw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcj-nX-Bpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-190"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="geJ-C6-qWw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" referencedIdentifier="SecondViewController" id="W2l-pd-Xub" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" image="paperplane" catalog="system" selectedImage="paperplane.fill" id="S0R-4H-07b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uld-Np-amL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="185"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="64" height="46"/>
+        <image name="folder.fill" catalog="system" width="64" height="46"/>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
+        <image name="trash.slash.fill" catalog="system" width="60" height="64"/>
+    </resources>
+</document>
