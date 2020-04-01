@@ -8,4 +8,4 @@
 
 **블로그 프로젝트 설명**<br>
 
-[스토리보드 레퍼런스(Storyboard Reference) 사용방법](https://swieeft.github.io/StoryboardReference/)
+[스토리보드 레퍼런스(Storyboard Reference) 사용방법](https://swieeft.github.io/2020/02/24/StoryboardReference.html)
